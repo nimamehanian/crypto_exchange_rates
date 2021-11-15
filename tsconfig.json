@@ -1,0 +1,47 @@
+{
+  "compilerOptions": {
+    "baseUrl": ".",
+    "paths": {
+      "@components/*": [
+        "./src/components/*"
+      ],
+      "@styles/*": [
+        "./src/styles/*"
+      ],
+      "@utils/*": [
+        "./src/utils/*"
+      ]
+    },
+    "target": "es5",
+    "lib": [
+      "dom",
+      "dom.iterable",
+      "esnext"
+    ],
+    "skipLibCheck": true,
+    "allowJs": true,
+    "noEmit": true, // No compilation; type-check only
+    "pretty": true, // Format logs
+    "strict": true,
+    "esModuleInterop": true, // omit `import * as x` notation
+    "jsx": "preserve", // Mandatory; Next runs its own JSX transform
+    "sourceMap": true,
+    "module": "esnext", // Supports dynamic `import()`
+    "moduleResolution": "node", // To match webpack resolution
+    "resolveJsonModule": true, // To match webpack resolution
+    "isolatedModules": true, // Required for Babel
+    // STYLE
+    "forceConsistentCasingInFileNames": true,
+    "noUnusedLocals": true,
+    "incremental": true
+  },
+  "include": [
+    "next-env.d.ts",
+    "**/*.ts",
+    "**/*.tsx"
+  ],
+  "exclude": [
+    "node_modules",
+    "public"
+  ]
+}
